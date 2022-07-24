@@ -162,8 +162,8 @@ function uniquifyArray(arr){
 
     let word = arr[i];
 
-    if(arr.indexOf(word) ){
-      newWords.push(arr[i]);
+    if(newWords.indexOf(word) < 0){
+      newWords.push(word);
     }
   }
 
