@@ -62,7 +62,6 @@ function sum(arr){
 
   let sum = 0;
   let aux;
-  // let error = 'Unsupported data type (object or array) present in the array';
 
   for(let i = 0; i < arr.length; i++){
     
@@ -80,7 +79,7 @@ function sum(arr){
     } else if(typeof arr[i] === 'number') {
       sum = sum + arr[i];
     } else {
-      // return error;
+      throw new Error("Unsupported data type sir or ma'am");
     }
 
   }
